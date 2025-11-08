@@ -1,0 +1,294 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.input-section, .analysis-section, .habits-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.subject-input {
+    display: flex;
+    gap: 15px;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.subject-input select, .subject-input input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    height: fit-content;
+}
+
+button:hover {
+    background: #5a6fd8;
+}
+
+.remove-btn {
+    background: #e74c3c;
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+.remove-btn:hover {
+    background: #c0392b;
+}
+
+.subject-card {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f8f9fa;
+}
+
+.subject-card h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #667eea;
+    padding-bottom: 10px;
+}
+
+.topic-input {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.topic-controls {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.topic-controls select,
+.topic-controls input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.marks-input {
+    width: 100px;
+}
+
+.priority-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.priority-high { 
+    background: #ffeaea; 
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+.priority-medium { 
+    background: #fff4e6; 
+    color: #f39c12;
+    border: 1px solid #f39c12;
+}
+.priority-low { 
+    background: #eafaf1; 
+    color: #27ae60;
+    border: 1px solid #27ae60;
+}
+
+.analysis-card {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.analysis-card h3 {
+    margin-bottom: 15px;
+}
+
+.habit-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #667eea;
+}
+
+.habit-frequency {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+.analyze-button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#analyzeBtn {
+    background: #27ae60;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+#analyzeBtn:hover {
+    background: #219a52;
+}
+
+#downloadBtn {
+    background: #9b59b6;
+    margin-top: 20px;
+}
+
+#downloadBtn:hover {
+    background: #8e44ad;
+}
+
+.priority-section {
+    margin-bottom: 30px;
+}
+
+.priority-section h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+    .subject-input {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .topic-input {
+        flex-wrap: wrap;
+    }
+    
+    .topic-controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .input-section, .analysis-section, .habits-section {
+        padding: 20px;
+    }
+}
+/* Add these styles to your existing CSS */
+
+#downloadBtn {
+    background: #e74c3c;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+#downloadBtn:hover {
+    background: #c0392b;
+}
+
+#downloadBtn::before {
+    content: "📥";
+}
+
+/* Loading state for download button */
+#downloadBtn.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+#downloadBtn.loading::after {
+    content: " ⏳";
+}
+
+/* Print styles for better PDF appearance */
+@media print {
+    .input-section,
+    .analysis-section,
+    .habits-section button {
+        display: none !important;
+    }
+    
+    .habits-section {
+        display: block !important;
+    }
+}

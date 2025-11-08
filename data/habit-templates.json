@@ -1,0 +1,14 @@
+{
+    "conceptual": [
+        "Watch one 10-minute video explanation of {topic} before study session",
+        "Explain {topic} concept to someone without notes",
+        "Create mind map for {topic} key concepts",
+        "Write summary in your own words for {topic}"
+    ],
+    "application": [
+        "Solve 2 {topic} problems daily with timer",
+        "Analyze 1 previous mistake in {topic} and re-solve",
+        "Practice {topic} formulas derivation for 10 minutes",
+        "Attempt one previous year question from {topic}"
+    ]
+}
